@@ -1,0 +1,98 @@
+* {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: #0a2ff1;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 400px;
+    margin: auto;
+}
+h1{
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+    max-width: 200px;
+}
+h2 , p {
+    color: white;
+    font-size: 1rem;
+}
+p {
+    font-size: 0.5rem;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: auto;
+} 
+.container {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    margin: 10px;
+}
+img {
+    width: 100%;
+    position: absolute;
+}
+.text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    text-align: center;
+}
+
+/*media 768px*/
+
+@media (min-width: 768px) {
+body {
+    width: 990px;
+}
+h1 {
+    max-width:100%;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+header {
+    width: 990px;
+}
+h2 , p {
+    font-size: 1.4rem;
+}
+p {
+    font-size: 0.7rem;
+}
+.text {
+    top: 80%;
+}
+}
+
+/*media 992px*/
+
+@media (min-width: 992px) {
+    body {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    .text {
+        top: 20vh;
+        width: 100%;
+    }
+    }
